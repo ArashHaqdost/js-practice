@@ -1,6 +1,9 @@
-let nameI = 'Arash';
-
+var nameI = 'Arash';
+var nameI = 'Mary';
 function great(){
-    console.log(nameI);
+    var age = 22;
+    var nameI='mahin';
+    console.log(nameI,age);
 }
-great();
+console.log(nameI);
+great(nameI);
