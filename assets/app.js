@@ -1,9 +1,12 @@
-var nameI = 'Arash';
-var nameI = 'Mary';
+let nameI = 'Arash';
+if (nameI==='Arash'){
+    let hobbies=['WorkOut','Styding'];
+}
+
 function great(){
-    var age = 22;
-    var nameI='mahin';
-    console.log(nameI,age);
+    let age = 22;
+    let nameI='mahin';
+    console.log(nameI,age );
 }
 console.log(nameI);
 great(nameI);
