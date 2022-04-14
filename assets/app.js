@@ -1,12 +1,10 @@
-let nameI = 'Arash';
-if (nameI==='Arash'){
-    let hobbies=['WorkOut','Styding'];
+function  getName() {
+    const InputN = prompt('Enter your Name :','');
+    
 }
+function showName(){
+    const userName=getName();
+    console.log('hoello ',userName);
 
-function great(){
-    let age = 22;
-    let nameI='mahin';
-    console.log(nameI,age );
 }
-console.log(nameI);
-great(nameI);
+showName();
