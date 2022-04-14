@@ -1,10 +1,10 @@
 function  getName() {
-    const InputN = prompt('Enter your Name :','');
+   return prompt('Enter your Name :','');
     
 }
-function showName(){
-    const userName=getName();
-    console.log('hoello ',userName);
 
+function showName(){
+    const userName = getName();
+    console.log ('hoello :' + userName);
 }
 showName();
