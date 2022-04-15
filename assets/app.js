@@ -8,3 +8,13 @@ function showName(){
     console.log ('hoello :' + userName);
 }
 showName();
+
+let hobbies=['footbal','runnig ',];
+let newHobies=[...hobbies];
+console.log(newHobies);
+
+let peroson={
+    name:"Max"
+};
+let newPerson= { ...peroson};
+console.log(newPerson);
