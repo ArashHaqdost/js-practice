@@ -1,20 +1,16 @@
-function  getName() {
-   return prompt('Enter your Name :','');
-    
+const startGamebtn=document.getElementById('start-game-btn');
+
+function startGame(){
+    console.log('Loding Game....');
 }
 
-function showName(){
-    const userName = getName();
-    console.log ('hoello :' + userName);
+// startGame();//dirctly call function
+let greet={
+    subject:function since(){
+        let first='dary';
+        let second='compiut';
+        return first+second;
+    }
 }
-showName();
-
-let hobbies=['footbal','runnig ',];
-let newHobies=[...hobbies];
-console.log(newHobies);
-
-let peroson={
-    name:"Max"
-};
-let newPerson= { ...peroson};
-console.log(newPerson);
+greet.since();
+startGamebtn.addEventListener('click',startGame);//call indirct functions
