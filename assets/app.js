@@ -58,17 +58,16 @@ startGamebtn.addEventListener('click',  () => {
   const ComputerChoise = getComputerChoise();
   const winner = getWinner(ComputerChoise, playerChoise);
   console.log(winner); 
+
+  let messange= `you picked ${playerChoise} and the computer picked ${ComputerChoise} `;
+    
+  if(winner=== DRAW){
+    messange = messange+'case of that you had a draw'; 
+  }else if(winner === RESULT_PLAYER_WIN){
+    messange =messange+'player Win';
+  }else{
+    messange= messange+'Lost';
+  }
+alert(messange);
+gameIsRunnig=false;
 });
-//call indirct functions
-const add = (a,b)=>{
-    const result = 'Ali'+3;
-    return result;
-}
-console.log(add()); 
-const show = message =>{
-    console.log(
-        'hellow dear this is the first maessange you can see ',
-        'thid is the second message ypu can see that'
-    );
-}
-show();
