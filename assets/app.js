@@ -1,20 +1,28 @@
 const startGamebtn=document.getElementById('start-game-btn');
 
-function startGame(){
-    console.log('Loding Game....');
-}
+const ROCK='ROCK';
+const PAPER='PAPER';
+const SCISSOR='SCISSOR';
+const DIFFULT_CHOSE_VLAUE=ROCK;
 
-// startGame();//dirctly call function
+const getPlayerChose = function(){
+    const slection=prompt(`${ROCK},${PAPER}or ${SCISSOR} ?`,'').toLocaleUpperCase();
 
-let greet={
-    subject:function since(){
-        let first='dary';
-        let second='compiut';
-        return first+second;
-
+    if (
+        slection !==ROCK&&
+        slection !==PAPER&&
+        slection !==SCISSOR
+    ){
+        alert(`invalid choise! we chose ${DIFFULT_CHOSE_VLAUE} for you!`);
+        return DIFFULT_CHOSE_VLAUE;
     }
-}
+    return slection;
+
+
+};
 
 startGamebtn.addEventListener('click',function(){
     console.log('Loding this Game...');
+    const playerSeclition= getPlayerChose();
+    console.log(playerSeclition);
 });//call indirct functions
