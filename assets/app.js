@@ -60,3 +60,15 @@ startGamebtn.addEventListener('click',  () => {
   console.log(winner); 
 });
 //call indirct functions
+const add = (a,b)=>{
+    const result = 'Ali'+3;
+    return result;
+}
+console.log(add()); 
+const show = message =>{
+    console.log(
+        'hellow dear this is the first maessange you can see ',
+        'thid is the second message ypu can see that'
+    );
+}
+show();
