@@ -5,6 +5,8 @@ const PAPER='PAPER';
 const SCISSOR='SCISSOR';
 const DIFFULT_CHOSE_VLAUE=ROCK;
 
+let gameIsRunnig=false;
+
 const getPlayerChose = function(){
     const slection=prompt(`${ROCK},${PAPER}or ${SCISSOR} ?`,'').toLocaleUpperCase();
 
@@ -22,6 +24,10 @@ const getPlayerChose = function(){
 };
 
 startGamebtn.addEventListener('click',function(){
+    if (gameIsRunnig){
+        return;
+    }
+    gameIsRunnig=true;
     console.log('Loding this Game...');
     const playerSeclition= getPlayerChose();
     console.log(playerSeclition);
