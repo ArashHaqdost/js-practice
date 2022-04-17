@@ -77,6 +77,7 @@ alert(messange);
 gameIsRunnig=false;
 });
 //cnot  realetee the game
+//Reset Parameter
 
 const suUp=(b,c,...numBers)=>{
   let sum=0;
