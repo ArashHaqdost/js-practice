@@ -56,10 +56,15 @@ startGamebtn.addEventListener('click',  () => {
   console.log('Loding this Game...');
   const playerChoise = getPlayerChose();
   const ComputerChoise = getComputerChoise();
-  const winner = getWinner(ComputerChoise, playerChoise);
-  console.log(winner); 
+  const winner = getWinner(ComputerChoise, playerChoise === DIFFULT_CHOSE_VLAUE);
+  let winer;
+  if(playerChoise){
+    winer=getWinner(ComputerChoise,playerChoise);
+  }else{
+    winer=getWinner(ComputerChoise,playerChoise);
+  }
 
-  let messange= `you picked ${playerChoise} and the computer picked ${ComputerChoise} `;
+  let messange= `you picked ${playerChoise || DIFFULT_CHOSE_VLAUE} and the computer picked ${ComputerChoise || DIFFULT_CHOSE_VLAUE} `;
     
   if(winner=== DRAW){
     messange = messange+'case of that you had a draw'; 
@@ -71,3 +76,14 @@ startGamebtn.addEventListener('click',  () => {
 alert(messange);
 gameIsRunnig=false;
 });
+//cnot  realetee the game
+
+const suUp=(b,c,...numBers)=>{
+  let sum=0;
+  for (const numb of numBers){
+    sum +=numb;
+  }
+  return sum;
+}
+
+console.log(suUp(1,2,10,20));
