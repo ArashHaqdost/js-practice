@@ -139,3 +139,22 @@ let numbers=[1,3,5,10];
 let cup=map(f,numbers);
 console.log(cup);
 
+let fuck;
+if (k===0){
+  fuck= function (thobj){
+    thobj.make='BMW';
+  }
+
+}
+
+//factorial
+
+function factorial(n){
+  if ( n===0 || n ===1){
+    return 1;
+  }else{
+    return(n*factorial(n-1));
+  }
+}
+
+alert(factorial(1));
