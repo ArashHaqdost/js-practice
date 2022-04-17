@@ -124,3 +124,18 @@ const add=function(num3,num4){
 }
 let h=add(40,30);
 alert (h);
+
+function map(f, a){
+  let resutl=[];
+  let i;
+  for (i=0; i !=a.length; i++)
+    resutl[i]=f(a[i]);
+  return resutl;
+}
+const f=function(x){
+  return x*x*x;
+}
+let numbers=[1,3,5,10];
+let cup=map(f,numbers);
+console.log(cup);
+
