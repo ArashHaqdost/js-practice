@@ -203,4 +203,12 @@ function A(a){
   b(2);
 }
 A(1);
-
+//
+function outSidee(){
+  let x=7;
+  function inSide(x){
+    return x*5;
+  }
+  return inSide;
+}
+outSidee()(10);
