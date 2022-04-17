@@ -119,42 +119,55 @@ const squred = function (number) {
 };
 let k = squred(9);
 
-const add=function(num3,num4){
-  return num3+num4;
-}
-let h=add(40,30);
-alert (h);
+const add = function (num3, num4) {
+  return num3 + num4;
+};
+let h = add(40, 30);
+alert(h);
 
-function map(f, a){
-  let resutl=[];
+function map(f, a) {
+  let resutl = [];
   let i;
-  for (i=0; i !=a.length; i++)
-    resutl[i]=f(a[i]);
+  for (i = 0; i != a.length; i++) resutl[i] = f(a[i]);
   return resutl;
 }
-const f=function(x){
-  return x*x*x;
-}
-let numbers=[1,3,5,10];
-let cup=map(f,numbers);
+const f = function (x) {
+  return x * x * x;
+};
+let numbers = [1, 3, 5, 10];
+let cup = map(f, numbers);
 console.log(cup);
 
 let fuck;
-if (k===0){
-  fuck= function (thobj){
-    thobj.make='BMW';
-  }
-
+if (k === 0) {
+  fuck = function (thobj) {
+    thobj.make = 'BMW';
+  };
 }
 
 //factorial
 
-function factorial(n){
-  if ( n===0 || n ===1){
+function factorial(n) {
+  if (n === 0 || n === 1) {
     return 1;
-  }else{
-    return(n*factorial(n-1));
+  } else {
+    return n * factorial(n - 1);
   }
 }
 
-alert(factorial(1));
+// let i=0;
+
+// while(i<10){
+//   console.log(`tis is the Number : ${i}`);
+//   i++;
+// }
+
+function foo(i){
+  if (i<0){
+    return;
+    console.log('Being :'+i);
+    foo(i+1);
+    console.log('End :'+i);
+  };
+}
+foo(3);
