@@ -171,3 +171,36 @@ function foo(i){
   };
 }
 foo(3);
+
+function addSquir(a,b){
+  function squre(x){
+    return x*x;
+  }
+  return squre(a)+squre(b);
+}
+a=addSquir(2,3);
+b=addSquir(4,6);
+
+function outerside(x){
+  function innerside(y){
+    return x+y;
+  }
+  return innerside;
+}
+
+fn_inneSide=outerside(3)
+
+console.log(result = fn_inneSide(5));
+console.log(result = outerside(5)(3));
+
+function A(a){
+  function b(b){
+    function c(c){
+      console.log(a+b+c);
+    }
+    c(3);
+  }
+  b(2);
+}
+A(1);
+
